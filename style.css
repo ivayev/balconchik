@@ -1,0 +1,120 @@
+.service-area{
+    display: grid;
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 27% 27% 27%;
+    background-color: rgb(29, 29, 93);
+    height: 900px;
+    column-gap: 80px;
+    row-gap: 80px;
+   padding-top: 50px;
+   padding-left: 150px;
+    padding-bottom: 20px;
+}
+a.button{
+    color: white;
+    text-decoration: none;
+}
+p{
+    padding-left: 10px;
+    font-size: large;
+    color: rgba(84, 76, 76, 0.868);
+    position: relative;
+    transition-duration: 1s;
+}
+.a-button{
+    background-color: orange;
+    height: 50px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1s;
+}
+.a-button:hover{
+    background-color: rgb(186, 129, 22);
+}
+
+h2{
+    color: white;
+    font-size: xx-large;
+}
+h1{
+    padding-left: 60px;
+    color: rgb(22, 22, 97);
+    font-size: x-large;
+    position: relative;
+    transition-duration: 1s;
+}
+.value{
+    color: orange;
+    font-size: x-large;
+    margin-left: 20px;
+    padding-top: 10px;
+    z-index: 1;
+    position: relative;
+}
+.poslugy{
+    background-color: rgb(29, 29, 93);
+}
+.block{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition-duration: 1s;
+}
+.block:nth-child(9){
+    background-image: url("pictures/in.jpg");
+}
+
+.block:nth-child(8){
+    background-image: url("pictures/dach.avif");
+}
+
+.block:nth-child(7){
+    background-image: url("pictures/balcon.webp");
+}
+.block:nth-child(6){
+    background-image: url("pictures/glass.webp");
+}
+.block:nth-child(5){
+    background-image: url("pictures/wynos.jpg");
+}
+.block:nth-child(3){
+    background-image: url("pictures/room.jpg");
+}
+.block:nth-child(4){
+    background-image: url("pictures/france.jpg");
+}
+.block:nth-child(2){
+    background-image: url("pictures/kliuch.webp");
+}
+
+.block:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 1;
+    transition: 0.7s all ease;
+    z-index: 0;
+    opacity: 0.95;
+}
+.block:hover::before{
+    background-color: black;
+    opacity: 0.4;
+}
+
+.block:hover{
+    transform: translateY(-10px);
+}
+
+.block:hover h1 {
+    color: #fff;
+}
+.block:hover p{
+    color: rgb(224, 218, 218);
+}
